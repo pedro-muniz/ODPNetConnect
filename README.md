@@ -10,10 +10,10 @@ Usage:
     }
     string sql = @"INSERT INTO TABLE (D1, D2, D3)  VALUES (:D1, :D2, :D3)";
 
-    Dictionary<string, object> parameters = new Dictionary<string, object>();
-    parametros["D1"] = "D1";
-    parametros["D2"] = "D2";
-    parametros["D3"] = "D3";
+    Dictionary<string, object> params = new Dictionary<string, object>();
+    params["D1"] = "D1";
+    params["D2"] = "D2";
+    params["D3"] = "D3";
 
     int affectedRows  = odp.ParameterizedWrite(sql, parameters);
 

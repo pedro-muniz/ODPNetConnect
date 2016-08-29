@@ -51,7 +51,7 @@ namespace DAO
         ///     Conectar no banco de dados, default true
         ///     Open database connection
         /// </param>
-        public ODPNetConnect(bool startConnection = true)
+        public ODPNetConnect(bool startConnection = false)
         {
             ClearMessages();
             if (!startConnection)
